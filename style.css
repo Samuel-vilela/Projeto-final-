@@ -67,6 +67,7 @@ main {
         overflow-x: hidden;
     }
     .nav-list {
+        margin-top: 59px;
         position: absolute;
         top: 8vh;
         right: 0;
@@ -348,7 +349,6 @@ main {
     }
     
 }
-
 
  /*  --- X ---  */
 

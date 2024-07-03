@@ -9,10 +9,10 @@
 <body>
 <h1>Cadastro de informações</h1>
 
-<form method="Post" action="salvar.php" enctype="multipart/form-data" id="cadastroForm">
+<form method="post" action="salvar.php" enctype="multipart/form-data" id="cadastroForm">
     <div>
         <label for="img">Imagem:</label>
-        <input type="file" id="img" name="img" accept="img/*">
+        <input type="file" id="img" name="img" accept="image/*">
     </div>
     <div>
         <label for="titulo">Título:</label>
@@ -37,7 +37,6 @@
     <button type="submit">Cadastrar</button>
     <a href="admin.php"><button type="button">Voltar</button></a>
 </form>
-<img src="img/baiken2.png" alt="">
-
+<img src="img/baiken2.png" alt="Imagem Exemplo">
 </body>
 </html>

@@ -1,0 +1,122 @@
+
+.mortal-baner,.tekken-baner,.king-baner,.fighter-baner1,.shadow-baner1 {
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    max-height: 100%;
+    min-height: 40em;
+}
+
+.mortal-baner {
+    background-image: url(img/mortal1.jpeg);
+}
+
+.tekken-baner {
+    background-image: url(img/tekken-banner.jpeg);
+}
+
+.king-baner {
+    background-image: url(img/king-banner.jpeg);
+}
+
+.fighter-baner1 {
+    background-image: url(img/stret-baner.jpeg);
+}
+
+.shadow-baner1 {
+    background-image: url(img/shadow-baner.jpeg);
+}
+
+.baner-mortal1,
+.baner-tekken1,
+.baner-king1,
+.baner-fighter1,
+.baner-shadow1 {
+    width: 90%;
+    max-width: 500px;
+    height: auto;
+    padding: 20px;
+    margin-left: 30px;
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+    font-weight: 50;
+    font-style: normal;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    text-align: left;
+}
+
+.mortal-bane,
+h6 {
+    color: #1d3da8;
+}
+
+.btn-mais {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f00;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-mais {
+    background-color: #d00;
+}
+
+
+@media (max-width: 768px) {
+    .baner-mortal1,
+    .baner-tekken1,
+    .baner-king1,
+    .baner-fighter1,
+    .baner-shadow1 {
+        width: 700px;
+        padding: 10px;
+        margin: 10px auto;
+        height: 700px;
+    }
+
+    .mortal-baner,
+    .tekken-baner,
+    .king-baner,
+    .fighter-baner1,
+    .shadow-baner1 {
+        min-height: 20em;
+    }
+
+    .btn-mais {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .baner-mortal1,
+    .baner-tekken1,
+    .baner-king1,
+    .baner-fighter1,
+    .baner-shadow1 {
+        width: 100%;
+        padding: 5px;
+        margin: 5px auto;
+    }
+
+    .mortal-baner,
+    .tekken-baner,
+    .king-baner,
+    .fighter-baner1,
+    .shadow-baner1 {
+        min-height: 15em;
+    }
+
+    .btn-mais {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+} 
