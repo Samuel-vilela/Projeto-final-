@@ -55,7 +55,7 @@ const heading =
 const description = 
    document.querySelector('.rubrica p');
    
-   //    variação image 
+   //    variação imagens 
 
 const images = ["./img/1316184.jpeg", "./img/playstation.jpg", "./img/the-king.jpg", "./img/street.jpg", "./img/shadow.jpg"];
    
@@ -63,6 +63,8 @@ const headings = [
     "MORTAL KOMBAT 1", "TEKKEN 8", "THE KING OF FIGHTERS XV", "Street Fighter 6", "SAMURAI SHODOWN"
     
 ]; 
+  
+// Variação de descrição 
 
 const descriptions = [
     "Mortal Kombat 1, lançado em 2023, é um reboot da série icônica de jogos de luta. Desenvolvido pela NetherRealm Studios, o jogo se passa na nova linha do tempo criada por Liu Kang após sua ascensão à divindade em Mortal Kombat 11."," Tekken 8 é a mais recente entrada na lendária série de jogos de luta da Bandai Namco, prometendo ser um título épico e cheio de ação.", "The King of Fighters XV é a mais recente entrada na clássica série de jogos de luta da SNK, prometendo ainda mais ação e combos épicos.", "Street Fighter 6 é a mais recente edição da lendária série de jogos de luta da Capcom, prometendo uma experiência de combate emocionante e inovadora.", "Samurai Shodown, também conhecido como Samurai Spirits, é uma série de jogos de luta clássicos que se destacam por sua ação frenética e combate com armas brancas. A franquia apresenta personagens samurais e guerreiros de diversas épocas do Japão feudal, lutando em duelos sangrentos."

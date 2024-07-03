@@ -13,7 +13,6 @@
 // Inclui o arquivo de conexão com o banco de dados
 include "conexao.php";
 
-// Função para escapar strings
 function safe($conexao, $str) {
     return mysqli_real_escape_string($conexao, $str);
 }
@@ -108,7 +107,7 @@ function safe($conexao, $str) {
     $sql_anime = "SELECT * FROM tb_jogos WHERE categoria = 'anime' ORDER BY id DESC";
     $resultado_anime = mysqli_query($conexao, $sql_anime);
 
-    // Verifica se há resultados
+    // Verifica os resultados
     if (mysqli_num_rows($resultado_anime) > 0) {
         while ($produto = mysqli_fetch_assoc($resultado_anime)) {
     ?>
@@ -143,10 +142,10 @@ function safe($conexao, $str) {
 <div class="vitrini-container">
 
     <?php
-    // Consulta SQL para buscar jogos clássicos
+
     $sql_classicos = "SELECT * FROM tb_jogos WHERE categoria = 'classicos' ORDER BY id DESC";
     $resultado_classicos = mysqli_query($conexao, $sql_classicos);
-    // Verifica se há resultados
+
     if (mysqli_num_rows($resultado_classicos) > 0) {
         while ($produto = mysqli_fetch_assoc($resultado_classicos)) {
     ?>
@@ -178,11 +177,10 @@ function safe($conexao, $str) {
   <!--  Área de personagens  -->
   &nbsp;
   <?php
-    // Consulta SQL para buscar jogos de anime
+
     $sql_personagem = "SELECT * FROM tb_jogos WHERE categoria = 'personagem' ORDER BY id DESC";
     $resultado_personagem = mysqli_query($conexao, $sql_personagem);
 
-    // Verifica se há resultados
     if (mysqli_num_rows($resultado_personagem) > 0) {
         while ($produto = mysqli_fetch_assoc($resultado_personagem)) {
     ?>
@@ -220,8 +218,8 @@ function safe($conexao, $str) {
       <p>&copy; 2024 Todos os direitos reservados</p>
     </div>
   </footer>
+
 <?php
-// Fecha a conexão com o banco de dados
 mysqli_close($conexao);
 ?> 
 
